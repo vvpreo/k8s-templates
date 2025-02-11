@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod_name
+  labels:
+    name: value
+spec:
+  volumes:
+    - name: vol_name
+      persistentVolumeClaim:
+        claimName: claim_name
+#  initContainers:
+  containers:
+  - name: container_name
+    image: container_image
+    volumeMounts:
+    - name: name_from_list_of_volumes
+      mountPath: /path/in/the/container
