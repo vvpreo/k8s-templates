@@ -11,4 +11,9 @@ spec:
   resources:
     requests:
       storage: 5Gi
+  selector:
+    matchLabels:
+      key1: v
+      key2: v
+
 #  storageClassName: standard
