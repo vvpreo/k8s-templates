@@ -4,6 +4,10 @@ metadata:
   name: myclaim
 spec:
   accessModes:
+    - ReadOnlyMany
+    - ReadWriteOnce
+    - ReadWriteMany
+  accessModes:
     - ReadWriteOnce
   resources:
     requests:
