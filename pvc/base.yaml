@@ -8,8 +8,6 @@ spec:
     - ReadOnlyMany
     - ReadWriteOnce
     - ReadWriteMany
-  accessModes:
-    - ReadWriteOnce
   resources:
     requests:
       storage: 5Gi
